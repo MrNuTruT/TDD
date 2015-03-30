@@ -1,52 +1,34 @@
 package iut.tdd;
 
+import java.util.HashMap;
+
 public class Convert {
+	
+	static HashMap<String,String> n2t = new HashMap<String,String>();
+	static {
+		n2t.put("0", "zéro");
+		n2t.put("1", "un");
+		n2t.put("2", "deux");
+		n2t.put("3", "trois");
+		n2t.put("4", "quatre");
+		n2t.put("5", "cinq");
+		n2t.put("6", "six");
+		n2t.put("7", "sept");
+		n2t.put("8", "huit");
+		n2t.put("9", "neuf");
+		n2t.put("10", "dix");
+		n2t.put("11", "onze");
+		n2t.put("12", "douze");
+		n2t.put("13", "treize");
+		n2t.put("14", "quatorze");
+		n2t.put("15", "qunize");
+		n2t.put("16", "seize");
+	}
+	
 	public static String num2text(String input) {
-		if(input.equals("0"))
-			return "zéro";
-		else if(input.equals("1"))
-			return "un";
-		else if(input.equals("2"))
-			return "deux";
-		else if(input.equals("3"))
-			return "trois";
-		else if(input.equals("4"))
-			return "quatre";
-		else if(input.equals("5"))
-			return "cinq";
-		else if(input.equals("6"))
-			return "six";
-		else if(input.equals("7"))
-			return "sept";
-		else if(input.equals("8"))
-			return "huit";
-		else if(input.equals("9"))
-			return "neuf";
-		else
-			return null;
+		return(n2t.get(input));
 	}
 	public static String text2num(String input) {
-		if(input.equals("zéro"))
-			return "0";
-		else if(input.equals("un"))
-			return "1";
-		else if(input.equals("deux"))
-			return "2";
-		else if(input.equals("trois"))
-			return "3";
-		else if(input.equals("quatre"))
-			return "4";
-		else if(input.equals("cinq"))
-			return "5";
-		else if(input.equals("six"))
-			return "6";
-		else if(input.equals("sept"))
-			return "7";
-		else if(input.equals("huit"))
-			return "8";
-		else if(input.equals("neuf"))
-			return "9";
-		else
-			return null;
+		
 	}
 }
