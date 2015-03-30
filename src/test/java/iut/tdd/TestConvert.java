@@ -121,4 +121,9 @@ public class TestConvert {
 	public void test_num2text_soixante_deux () {
 		Assert.assertEquals("soixante deux", Convert.num2text("62"));
 	}
+	
+	@Test
+	public void test_num2text_soixante_onze () {
+		Assert.assertEquals("soixante quinze", Convert.num2text("75"));
+	}
 }
