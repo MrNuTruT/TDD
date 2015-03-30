@@ -73,7 +73,7 @@ public class TestConvert {
 		Assert.assertEquals("seize", Convert.num2text("16"));
 	}
 	
-	// 10 
+	
 	@Test
 	public void test_num2text_vingt () {
 		Assert.assertEquals("vingt", Convert.num2text("20"));
@@ -95,6 +95,7 @@ public class TestConvert {
 		Assert.assertEquals("soixante", Convert.num2text("60"));
 	}
 	
+	
 	@Test
 	public void test_num2text_vingt_et_un () {
 		Assert.assertEquals("vingt et un", Convert.num2text("21"));
@@ -114,5 +115,10 @@ public class TestConvert {
 	@Test
 	public void test_num2text_soixante_et_un () {
 		Assert.assertEquals("soixante et un", Convert.num2text("61"));
+	}
+	
+	@Test
+	public void test_num2text_soixante_deux () {
+		Assert.assertEquals("soixante deux", Convert.num2text("62"));
 	}
 }

@@ -39,9 +39,10 @@ public class Convert {
 		
 		else if(nbr == 21 || nbr == 31 || nbr == 41 || nbr == 51 || nbr == 61)
 			return(n2t.get(""+(nbr/10)*10) + " et " + n2t.get(""+(nbr -((nbr/10)*10))));
-					
-		else
+		else if(nbr < 69)
 			return(n2t.get(""+(nbr/10)*10) + " " + n2t.get(""+(nbr -((nbr/10)*10))));
+		else
+			return null;
 	
 	}
 	public static String text2num(String input) {
