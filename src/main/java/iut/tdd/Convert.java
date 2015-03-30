@@ -43,7 +43,10 @@ public class Convert {
 			return(n2t.get(""+(nbr/10)*10) + " " + n2t.get(""+(nbr -((nbr/10)*10))));
 		else if(nbr >= 70 && nbr < 80)
 			return(n2t.get(""+(((nbr/10)*10)-10)) + " " + n2t.get(""+(nbr -(((nbr/10)*10)-10))));
-		
+		else if( nbr == 80)
+			return(n2t.get(""+(((nbr/10))-4)) + " " + n2t.get(""+(nbr -(((nbr/10)*10)-20))));
+		else if(nbr > 80 && nbr < 90)
+			return(n2t.get(""+(((nbr/10))-4)) + " " + n2t.get(""+(nbr -(((nbr/10)*10)-60))) + " " + n2t.get(""+(nbr - ((nbr/10)*10))) );
 		else
 			return null;
 	

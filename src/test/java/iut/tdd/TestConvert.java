@@ -123,7 +123,18 @@ public class TestConvert {
 	}
 	
 	@Test
-	public void test_num2text_soixante_onze () {
-		Assert.assertEquals("soixante quinze", Convert.num2text("75"));
+	public void test_num2text_soixante_seize () {
+		Assert.assertEquals("soixante seize", Convert.num2text("76"));
 	}
+	
+	@Test
+	public void test_num2text_quatre_vingt () {
+		Assert.assertEquals("quatre vingt", Convert.num2text("80"));
+	}
+	
+	@Test
+	public void test_num2text_quatre_vingt_un () {
+		Assert.assertEquals("quatre vingt un", Convert.num2text("81"));
+	}
+	
 }
